@@ -5,9 +5,11 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 
-data class CreateUserRequest(val employeeName: String, val employeePost: String)
-data class CreateUserResponse(val id: String, val employeeName: String, val employeePost: String, val createdAt: String)
+// Added classes to GET and PUSH custom data
+data class CreateUserRequest(val employeeFirstname: String, val employeeLastname: String,val employeePosition: String)
+data class CreateUserResponse(val id: String, val employeeFirstname: String, val employeeLastname: String,val employeePosition: String, val createdAt: String)
 
+// API interface
 interface ApiService {
     @GET("users?page=2")
     suspend fun getUsers(): UserResponse

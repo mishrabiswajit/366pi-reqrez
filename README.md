@@ -11,13 +11,17 @@
 - Implements error handling for network failures.
 
 ## Screenshots
-![Homepage](/sample/Screenshot_2024-07-11-12-22-47-782_com.example.a366pi.jpg)
+![Homepage](/sample/Screenshot_2024-07-11-22-10-40-270_com.example.a366pi.jpg)
 
-![Successfull PUSH](/sample/Screenshot_2024-07-11-12-23-01-241_com.example.a366pi.jpg)
+![Add User](/sample/Screenshot_2024-07-11-22-10-45-845_com.example.a366pi.jpg)
 
-![Unsuccessfull PUSH](/sample/Screenshot_2024-07-11-12-23-09-217_com.example.a366pi.jpg)
+![Successfull PUSH](/sample/Screenshot_2024-07-11-22-11-00-051_com.example.a366pi.jpg)
 
-![No Internet](/sample/Screenshot_2024-07-11-12-23-14-988_com.example.a366pi.jpg)
+![Recalling the userdata GET](/sample/Screenshot_2024-07-11-22-11-04-533_com.example.a366pi.jpg)
+
+![Unsuccessfull PUSH](/sample/Screenshot_2024-07-11-22-11-34-783_com.example.a366pi.jpg)
+
+![No Internet](/sample/Screenshot_2024-07-11-22-11-14-666_com.example.a366pi.jpg)
 
 ## Setup
 

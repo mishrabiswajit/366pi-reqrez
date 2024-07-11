@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.a366pi"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -50,8 +50,6 @@ android {
 }
 
 dependencies {
-//    val navVersion = "2.7.7"
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,7 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-
     // Retrofit and Gson
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
@@ -69,11 +66,6 @@ dependencies {
     // Coil for image loading
     implementation ("io.coil-kt:coil-compose:2.1.0")
 
-//    implementation("androidx.navigation:navigation-compose:$navVersion")
-//    implementation("androidx.compose.material:material:1.4.3")
-//    implementation("androidx.compose.material3:material3:1.1.1")
-//    implementation("com.google.android.material:material:1.9.0")
-    implementation("io.coil-kt:coil-compose:2.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
