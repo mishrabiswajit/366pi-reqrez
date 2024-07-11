@@ -216,6 +216,10 @@ fun AddUserPage(onBack: () -> Unit, onUserAdded: (User) -> Unit) {
     val scope = rememberCoroutineScope()
     val snackbarHostState = remember { SnackbarHostState() }
 
+
+    // Regular expression to allow only letters
+    val namePattern = Regex("^[a-zA-Z]*$")
+
     Scaffold(
 
         // Top-bar Section
@@ -253,7 +257,17 @@ fun AddUserPage(onBack: () -> Unit, onUserAdded: (User) -> Unit) {
             // Asking for first name
             TextField(
                 value = employeeFirstname,
-                onValueChange = { employeeFirstname = it },
+                onValueChange = {
+
+                    // Checks for invalid characters
+                    scope.launch {
+                        if (namePattern.matches(it)) {
+                            employeeFirstname = it
+                        } else {
+                            snackbarHostState.showSnackbar("Name cannot contain special characters or numbers")
+                        }
+                    }
+                },
                 label = { Text("Enter your First Name") },
                 modifier = Modifier.fillMaxWidth()
             )
@@ -263,7 +277,17 @@ fun AddUserPage(onBack: () -> Unit, onUserAdded: (User) -> Unit) {
             // Asking for last name
             TextField(
                 value = employeeLastname,
-                onValueChange = { employeeLastname = it },
+                onValueChange = {
+
+                    // Checks for invalid characters
+                    scope.launch {
+                        if (namePattern.matches(it)) {
+                            employeeLastname = it
+                        } else {
+                            snackbarHostState.showSnackbar("Name cannot contain special characters or numbers")
+                        }
+                    }
+                },
                 label = { Text("Enter your Last Name") },
                 modifier = Modifier.fillMaxWidth()
             )
