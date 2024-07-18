@@ -1,4 +1,4 @@
-# 366pi App
+# 366pi-reqrez App
 
 366pi is a sample Android application that demonstrates fetching and displaying user data using Retrofit and Jetpack Compose.
 
